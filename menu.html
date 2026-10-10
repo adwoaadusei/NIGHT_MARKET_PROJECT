@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>
+      The menu | Night Market
+    </title>
+    <meta name="description" content="Night Market: a Ghanaian chop bar student demonstration with an interactive menu and order calculator.">
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="chopbar.js">
+    </script>
+  </head>
+  <body>
+    <a class="skip" href="#main">
+      Skip to content
+    </a>
+    <header>
+      <a class="brand" href="index.html">
+        Night Market
+        <span>
+          THE CHOP BAR
+        </span>
+      </a>
+      <nav aria-label="Main navigation">
+        <a href="index.html" >
+          Home
+        </a>
+        <a href="menu.html" aria-current="page">
+          Menu
+        </a>
+        <a href="order.html" >
+          Order
+          <span class="cart-count">
+            0
+          </span>
+        </a>
+        <a href="about.html" >
+          About
+        </a>
+        <a href="contact.html" >
+          Contact
+        </a>
+      </nav>
+    </header>
+    <main id="main">
+      <section class="page-intro">
+        <p class="eyebrow">
+          FRESH PICKS · FAMILIAR FAVOURITES
+        </p>
+        <h1>
+          Something for
+          <br>
+          <em>
+            every craving.
+          </em>
+        </h1>
+        <p>
+          Find your next favourite. All prices are in Ghana cedis.
+        </p>
+      </section>
+      <section>
+        <div class="filters">
+          <label for="search">
+            Find a dish
+            <input type="search" id="search" placeholder="Try jollof or sobolo…">
+          </label>
+          <div class="filter-buttons" role="group" aria-label="Filter menu by category">
+            <button data-category="All" aria-pressed="true">
+              All
+            </button>
+            <button data-category="Food" aria-pressed="false">
+              Food
+            </button>
+            <button data-category="Sides" aria-pressed="false">
+              Sides
+            </button>
+            <button data-category="Drinks" aria-pressed="false">
+              Drinks
+            </button>
+          </div>
+          <label for="sort">
+            Sort by
+            <select id="sort">
+              <option value="default">
+                House selection
+              </option>
+              <option value="name">
+                Name: A–Z
+              </option>
+              <option value="price">
+                Price: low to high
+              </option>
+            </select>
+          </label>
+        </div>
+        <p id="menu-count" class="small" aria-live="polite">
+        </p>
+        <div class="cards" id="menu-grid">
+        </div>
+        <p class="small">
+          Ingredient questions? Please check with the restaurant before ordering. This demonstration does not provide verified allergen information.
+        </p>
+      </section>
+    </main>
+    <footer>
+      <a class="brand" href="index.html">
+        Night Market
+        <span>
+          GOOD FOOD. GREAT COMPANY.
+        </span>
+      </a>
+      <p>
+        Web Technologies synthesis · Fictional restaurant demo
+      </p>
+      <a href="contact.html">
+        Say hello ↗
+      </a>
+    </footer>
+    <div id="toast" role="status">
+    </div>
+  </body>
+</html>

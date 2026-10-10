@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>
+      Say hello | Night Market
+    </title>
+    <meta name="description" content="Night Market: a Ghanaian chop bar student demonstration with an interactive menu and order calculator.">
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="chopbar.js">
+    </script>
+  </head>
+  <body>
+    <a class="skip" href="#main">
+      Skip to content
+    </a>
+    <header>
+      <a class="brand" href="index.html">
+        Night Market
+        <span>
+          THE CHOP BAR
+        </span>
+      </a>
+      <nav aria-label="Main navigation">
+        <a href="index.html" >
+          Home
+        </a>
+        <a href="menu.html" >
+          Menu
+        </a>
+        <a href="order.html" >
+          Order
+          <span class="cart-count">
+            0
+          </span>
+        </a>
+        <a href="about.html" >
+          About
+        </a>
+        <a href="contact.html" aria-current="page">
+          Contact
+        </a>
+      </nav>
+    </header>
+    <main id="main">
+      <section class="page-intro">
+        <p class="eyebrow">
+          LET’S TALK
+        </p>
+        <h1>
+          A little hello
+          <br>
+          <em>
+            goes a long way.
+          </em>
+        </h1>
+        <p>
+          Questions, feedback, or a table for your group?
+        </p>
+      </section>
+      <section class="contact-layout">
+        <div>
+          <h2>
+            We’d love to hear from you.
+          </h2>
+          <p>
+            Use this form to try the website’s contact experience.
+          </p>
+          <dl>
+            <dt>
+              Email · example only
+            </dt>
+            <dd>
+              hello@nightmarket.example
+            </dd>
+            <dt>
+              Location · fictional
+            </dt>
+            <dd>
+              Accra, Ghana
+            </dd>
+          </dl>
+          <p class="small">
+            This is a student project. Messages are not delivered or stored.
+          </p>
+        </div>
+        <form id="contact-form" class="contact-form">
+          <label for="name">
+            Your name
+            <input id="name" name="name" required maxlength="60" autocomplete="name">
+          </label>
+          <label for="email">
+            Email address
+            <input type="email" id="email" name="email" required autocomplete="email">
+          </label>
+          <label for="topic">
+            What’s on your mind?
+            <select id="topic" name="topic">
+              <option>
+                General question
+              </option>
+              <option>
+                Group booking
+              </option>
+              <option>
+                Feedback
+              </option>
+            </select>
+          </label>
+          <label for="message">
+            Message
+            <textarea id="message" name="message" required minlength="10" maxlength="500" rows="5" aria-describedby="character-count">
+            </textarea>
+          </label>
+          <p id="character-count" class="small">
+            0 / 500 characters
+          </p>
+          <button class="button" type="submit">
+            Submit demo message →
+          </button>
+          <p id="contact-status" role="status">
+          </p>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <a class="brand" href="index.html">
+        Night Market
+        <span>
+          GOOD FOOD. GREAT COMPANY.
+        </span>
+      </a>
+      <p>
+        Web Technologies synthesis · Fictional restaurant demo
+      </p>
+      <a href="contact.html">
+        Say hello ↗
+      </a>
+    </footer>
+    <div id="toast" role="status">
+    </div>
+  </body>
+</html>
